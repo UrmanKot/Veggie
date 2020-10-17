@@ -1,0 +1,53 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.contact-form__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contact-form__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.contact-form__bottom {
+  margin-bottom: 50px;
+}
+
+.contact-form__field {
+  display: flex;
+  width: 45%;
+  margin: 0;
+
+  &--textarea {
+    width: 100%;
+  }
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #3c3c3c;
+  resize: none;
+  font: inherit;
+}
+
+.contact-form__button {
+  display: block;
+  margin: 0 auto;
+  padding: 17px 30px;
+  background-color: transparent;
+  border: 1px solid #6b6c6c;
+  cursor: pointer;
+  color: $black;
+  font-size: 18px;
+}

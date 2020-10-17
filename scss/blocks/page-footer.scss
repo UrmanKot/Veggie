@@ -1,0 +1,44 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.page-footer {
+  background-color: #ecedee;
+}
+
+.page-footer__inner {
+  @include container;
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.page-footer__social {
+  margin-left: auto;
+}
+
+.page-footer__copyright {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 84%;
+  left: 114px;
+  margin: 0;
+  font-size: 18px;
+  color: $black;
+}
+
+@media (max-width: 767px) {
+  .page-footer__copyright {
+    text-align: left;
+    left: 0;
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .page-footer__copyright {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+}

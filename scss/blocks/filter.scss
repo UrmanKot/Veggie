@@ -1,0 +1,32 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.filter {
+  @include reset-list;
+  display: flex;
+  max-width: 540px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.filter__link {
+  display: block;
+  padding: 15px 22px;
+  font-size: 18px;
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    outline: 1px solid $black;
+  }
+}
+
+@media (max-width: 570px) {
+  .filter {
+    flex-direction: column;
+  }
+
+  .filter__link {
+    text-align: center;
+  }
+}

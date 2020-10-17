@@ -1,0 +1,33 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.site-list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-list__item {
+}
+
+.site-list__link {
+  display: block;
+  padding: 15px 22px;
+  font-size: 18px;
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    outline: 1px solid $black;
+  }
+}
+
+@media (max-width: 570px) {
+  .site-list {
+    flex-direction: column;
+  }
+
+  .site-list__link {
+    text-align: center;
+  }
+}
